@@ -12,7 +12,6 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@lombok
 @Getter
 @Setter
 @Table(name = "notification_log")

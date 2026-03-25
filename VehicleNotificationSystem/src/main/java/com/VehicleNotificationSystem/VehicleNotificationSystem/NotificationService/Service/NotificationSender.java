@@ -2,9 +2,16 @@ package com.VehicleNotificationSystem.VehicleNotificationSystem.NotificationServ
 
 import com.VehicleNotificationSystem.VehicleNotificationSystem.NotificationService.Model.Entity.NotificationLog;
 import com.VehicleNotificationSystem.VehicleNotificationSystem.NotificationService.Model.Enum.NotificationChannel;
+import com.VehicleNotificationSystem.VehicleNotificationSystem.NotificationService.Model.Enum.NotificationStatus;
 import com.VehicleNotificationSystem.VehicleNotificationSystem.NotificationService.Repo.NotificationLogRepository;
 import com.VehicleNotificationSystem.VehicleNotificationSystem.UserService.Dto.UserDto;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+
+import static com.VehicleNotificationSystem.VehicleNotificationSystem.NotificationService.Model.Enum.SeverityLevel.*;
+
+//This class responsible to send the message to user end
 
 @Service
 public class NotificationSender {
